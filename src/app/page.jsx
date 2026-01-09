@@ -74,7 +74,7 @@ const TourCard = () => {
   const reset = () => setTours(tourCards);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl px-4 pb-20">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl px-4 pb-20 mt-10">
       {tours.map((tour) => (
         <TourCardItem key={tour.id} {...tour} removeTour={removeTour} />
       ))}
